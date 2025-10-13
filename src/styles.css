@@ -1,0 +1,16 @@
+.container{min-width:980px;min-height:820px}
+.bg-blurs{position:absolute;right:0;left:0;top:220px;height:420px;pointer-events:none;z-index:0;background: radial-gradient(400px 200px at 50% 20%, rgba(255,134,225,0.35), transparent 30%), radial-gradient(240px 160px at 40% 10%, rgba(137,188,255,0.25), transparent 30%);filter:blur(40px)}
+.typing{display:flex;gap:6px;align-items:center}
+.typing .dot{width:8px;height:8px;border-radius:9999px;background:#56637e;opacity:0.8;animation:typing 1s infinite}
+.typing .dot:nth-child(2){animation-delay:0.2s}
+.typing .dot:nth-child(3){animation-delay:0.4s}
+@keyframes typing{0%{transform:translateY(0);opacity:0.3}50%{transform:translateY(-6px);opacity:1}100%{transform:translateY(0);opacity:0.3}}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Card-specific blurs and sizes to match design */
+.rounded-3xl{border-radius:24px}
+.card-blur-pink{position:absolute;width:520px;height:360px;border-radius:260px;background:radial-gradient(closest-side, rgba(255,134,225,0.45), transparent 40%);filter:blur(100px);bottom:-80px;transform:translateX(-120px)}
+.card-blur-blue{position:absolute;width:300px;height:240px;border-radius:140px;background:radial-gradient(closest-side, rgba(137,188,255,0.35), transparent 40%);filter:blur(80px);bottom:-40px;transform:translateX(120px)}
